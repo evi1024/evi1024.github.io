@@ -254,6 +254,9 @@ img:not([src]) {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
 }
+.justified-gallery {
+  margin: 1rem 0;
+}
 .justified-gallery img {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -4451,11 +4454,11 @@ img:hover {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
   filter: alpha(opacity=90);
   will-change: transform;
-  -webkit-transition: -webkit-transform 0.2s;
-  -moz-transition: -moz-transform 0.2s;
-  -o-transition: -o-transform 0.2s;
-  -ms-transition: -ms-transform 0.2s;
-  transition: transform 0.2s;
+  -webkit-transition: ease-in-out 0.2s;
+  -moz-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  -ms-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 #sidebar .sidebar-toc ol,
 #sidebar .sidebar-toc li {
