@@ -107,6 +107,7 @@ function activateLightMode(){
 <p>OK，万事具备，运行测试一下效果如何，刚一启动App就崩溃了，报如下错误：</p>
 <p><code>Warning: Libinfo call to mDNSResponder on main thread</code></p>
 <p>通过在网上一番搜索，发现是在主线程调用了一些网络请求导致的，解决方法直接将main函数的调用放到非主线程即可。再此运行测试，App功能正常，木马功能也正常。</p>
+<p><img alt="iOS木马功能正常" data-src="https://pic1.superbed.cn/item/5de9fa8cf1f6f81c50fd283a.png" class="lazyload"></p>
 <p>另外，macOS的需要生成mach-o格式的meterpreter反弹shell木马才行，shell的反弹会启动不了。</p>
 <h2 id="0x04-总结"><a href="#0x04-总结" class="headerlink" title="0x04 总结"></a>0x04 总结</h2><p>本文以macOS平台为例，演示了一种正常App注入木马程序的方式，iOS也一样可以用这种方式注入木马，由于iOS有沙盒的限制，木马能实现的功能有限， 但是对注入的App有极大的危害，而且App能获取的权限木马也能获取，比如摄像头、GPS等，因此会导致用户隐私信息泄漏，甚至被盗号的风险。</p>
 <h3 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h3><p><a href="http://blog.imjun.net/posts/convert-iOS-app-to-dynamic-library/" target="_blank" rel="noopener">http://blog.imjun.net/posts/convert-iOS-app-to-dynamic-library/</a></p>
